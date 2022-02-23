@@ -87,3 +87,4 @@ Note that when you check your code into GitHub, all of your tests will automatic
 
 ## Table of Contents
 challenge01: https://github.com/islam-Attar/data-structures-and-algorithms/blob/array-reverse/javascript/array-reverse/README.md
+challenge02: https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/array-insert-shift/README.md
