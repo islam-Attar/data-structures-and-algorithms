@@ -23,4 +23,7 @@ To run your tests
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
 
 ## Table of Contents
-challenge02: 
+| challenge      | Link |
+| ----------- | ----------- |
+| 3           | https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/array-binary-search/README.md       |
+| Paragraph   | Text        |
