@@ -25,5 +25,5 @@ To run your tests
 ## Table of Contents
 | challenge      | Link |
 | ----------- | ----------- |
-| 3           | https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/array-binary-search/README.md       |
-| Paragraph   | Text        |
+|            |        |
+| 3   | https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/array-binary-search/README.md        |
