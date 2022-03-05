@@ -15,6 +15,7 @@ class LinkedList {
     }
   }
 
+
   includes(value) {
     let current = this.head;
     if (current.value === value) return true;
@@ -40,6 +41,7 @@ class LinkedList {
     result += 'Null';
     return result;
   }
+
 }
 
 module.exports = LinkedList;
