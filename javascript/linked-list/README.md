@@ -9,6 +9,8 @@ also 3 methods that are insert, includes, and toString
 
 
 ## Approach & Efficiency
-If you just want to insert an element right to the beginning of the LinkedList, that can be done in constant time O(1).
+while loop because this kind of loop does't have starting and ending values so it will be flixable with the condition untill the condition is fale. insert --> BigO O(1). include --> BigO O(n). toString --> BigO O(n). append --> BigO O(1).
 
-If you want to traverse an element in the LinkedList, again constant time O(1).
+Linked lists hold two main pieces of information (the value and pointer) per node. This means that the amount of data stored increases linearly with the number of nodes in the list. Therefore, the space complexity of the linked list is linear:
+
+**Space - O(n)** for all of them
