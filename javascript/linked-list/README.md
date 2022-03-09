@@ -16,16 +16,12 @@ Linked lists hold two main pieces of information (the value and pointer) per nod
 **Space - O(n)** for all of them
 
 
-### kth method
+### kthFromEnd method
 the challange asked us
 to ask give the output of a specific index from the right to the left of the linked list
 
-insert --> BigO O(1).
-include --> BigO O(n).
-toString --> BigO O(n).
-append --> BigO O(1).
-addBefore --> BigO O(n).
-addAgter --> BigO O(n).
-Kth ----> BigO o(n)
+kthFromEnd ----> time = Big(O) n
 
-**Space - O(n)** for all of them
+**Space - O(1)** for kthFromEnd
+
+![](./challenge07.png)
