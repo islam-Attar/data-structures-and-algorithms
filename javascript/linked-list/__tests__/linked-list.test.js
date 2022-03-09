@@ -48,4 +48,20 @@ describe("Linked List", () => {
     expect(link.toString()).toBe('{a} ->{b} ->{c} ->Null');
   });
 
+  it('test of kthFromEnd', () => {
+    const link = new LinkedLilst();
+    link.insert(5);
+    link.insert(4);
+    link.insert(3);
+    link.insert(2);
+    link.insert(1);
+
+    expect(link.kthFromEnd(0)).toEqual(5);
+    expect(link.kthFromEnd(1)).toEqual(4);
+    expect(link.kthFromEnd(2)).toEqual(3);
+    expect(link.kthFromEnd(3)).toEqual(2);
+    expect(link.kthFromEnd(4)).toEqual(1);
+    expect(link.kthFromEnd(10)).toEqual('Exception');
+  });
+
 });
