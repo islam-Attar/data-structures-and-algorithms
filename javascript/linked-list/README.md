@@ -14,3 +14,18 @@ while loop because this kind of loop does't have starting and ending values so i
 Linked lists hold two main pieces of information (the value and pointer) per node. This means that the amount of data stored increases linearly with the number of nodes in the list. Therefore, the space complexity of the linked list is linear:
 
 **Space - O(n)** for all of them
+
+
+### kth method
+the challange asked us
+to ask give the output of a specific index from the right to the left of the linked list
+
+insert --> BigO O(1).
+include --> BigO O(n).
+toString --> BigO O(n).
+append --> BigO O(1).
+addBefore --> BigO O(n).
+addAgter --> BigO O(n).
+Kth ----> BigO o(n)
+
+**Space - O(n)** for all of them
