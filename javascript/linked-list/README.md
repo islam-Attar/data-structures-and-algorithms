@@ -18,10 +18,9 @@ Linked lists hold two main pieces of information (the value and pointer) per nod
 
 ### kthFromEnd method
 the challange asked us
-to ask give the output of a specific index from the right to the left of the linked list
+to ask give the output of a specific index from the right to the left of the linked list which is similar to search and it takes constant **time of Big(O) n**
 
-kthFromEnd ----> time = Big(O) n
 
-**Space - O(1)** for kthFromEnd
+kthFromEnd function holds two main pieces of information (the value and pointer) per node. This means that the amount of data stored increases linearly with the number of nodes in the list. Therefore, the space complexity of the linked list is linear: **Space - O(n)**
 
 ![](./challenge07.png)
