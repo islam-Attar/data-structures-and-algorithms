@@ -33,9 +33,16 @@ to create a method that take 2 parameters preValue and newValue where the node o
 
 So if you want to add a new node to a LinkedList, first you have to traverse it to find the "right" position where to insert the new element (a O(n) operation), then you have to insert it by using `AddBefore` or `AddAfter` (a O(1) operation). The composite complexity is clearly O(n).
 
+## zipList method
+Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the the zipped list.
+
+ traversing the list which allocate a two pointers to do so, the traversal algorithms is considered to be of **O(1)** space complexity and it has 1 while loop so its time complexity of **O(1)**.
+
+ ![](./zipList.png)
+
 ## Approach & Efficiency
-while loop because this kind of loop does't have starting and ending values so it will be flixable with the condition untill the condition is fail. insert --> BigO O(1). include --> BigO O(n). toString --> BigO O(n). append --> BigO O(1). addBefore --> BigO O(n). addAfter --> BigO O(n).
+while loop because this kind of loop does't have starting and ending values so it will be flixable with the condition untill the condition is fail. insert --> BigO O(1). include --> BigO O(n). toString --> BigO O(n). append --> BigO O(1). addBefore --> BigO O(n). addAfter --> BigO O(n). zipList --> O(1)
 
 Linked lists hold two main pieces of information (the value and pointer) per node. This means that the amount of data stored increases linearly with the number of nodes in the list. Therefore, the space complexity of the linked list is linear:
 
-**Space - O(n)** for all of them
+**Space - O(n)** for all of them EXCEPT zipList **Space - O(1)**.

@@ -79,7 +79,7 @@ class LinkedList {
       this.head = node;
     }
 
-    else{
+    else {
 
       while (current.next != null) {
 
@@ -88,40 +88,57 @@ class LinkedList {
 
       return current.next = node;
     }
+  }
+
+  insertBefore(preValue, newValue) {
+
+    const node = new Node(newValue);
+    let current = this.head;
+    while (current.next != null) {
+
+      if (current.next.value == preValue) {
+
+        node.next = current.next;
+        current.next = node;
+        return null;
+      }
+      current = current.next;
     }
+  }
 
-    insertBefore(preValue, newValue) {
 
-      const node = new Node(newValue);
-      let current = this.head;
-      while (current.next != null) {
-          
-          if (current.next.value == preValue) {
-            
-              node.next = current.next;
-              current.next = node;
-              return null;
-          }
-          current = current.next;
+  insertAfter(preValue, newValue) {
+    const node = new Node(newValue);
+    let current = this.head;
+
+    while (current.next != null) {
+      current = current.next;
+      if (current.value == preValue) {
+        node.next = current.next;
+        current.next = node;
+        return null;
       }
-      }
-
-
-      insertAfter(preValue, newValue) {
-        const node = new Node(newValue);
-        let current = this.head;
-
-        while (current.next != null) {
-            current = current.next;
-            if (current.value == preValue) {
-                node.next = current.next;
-                current.next = node;
-                return null;
-            }
-        }
-
     }
 
   }
-  
+
+  zipList(link1, link2) {
+
+    let l1 = link1.head;
+    let l2 = link2.head;
+
+    while (l1 || l2) {
+      if (l1) {
+        this.append(l1.value);
+        l1 = l1.next;
+      }
+      if (l2) {
+        this.append(l2.value);
+        l2 = l2.next;
+      }
+    }
+  }
+
+}
+
 module.exports = LinkedList;
