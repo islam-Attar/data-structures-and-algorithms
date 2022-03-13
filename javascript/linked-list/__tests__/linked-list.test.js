@@ -107,4 +107,25 @@ describe("Linked List", () => {
     expect(link.head.next.next.next.next.next).toBeNull();
   })
 
+
+  it('testing zipList method:',()=>{
+    const link1 = new LinkedLilst();
+    const link2 = new LinkedLilst();
+    const link3 = new LinkedLilst();
+    
+
+    link1.insert(5);
+    link1.insert(3);
+    link1.insert(1);
+
+    link2.insert(6);
+    link2.insert(4);
+    link2.insert(2);
+
+    link3.zipList(link1,link2);
+  
+  expect(link3.toString()).toBe('{1} ->{2} ->{3} ->{4} ->{5} ->{6} ->Null')
+  
+  })
+
 });
