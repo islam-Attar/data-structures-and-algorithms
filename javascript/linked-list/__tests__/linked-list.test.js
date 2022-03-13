@@ -40,7 +40,7 @@ describe("Linked List", () => {
     expect(LL.includes('c')).toBe(false);
   });
 
-  it('test of string', () => {
+  it('Testing string method:', () => {
     const link = new LinkedLilst();
     link.insert('c');
     link.insert('b');
@@ -48,7 +48,7 @@ describe("Linked List", () => {
     expect(link.toString()).toBe('{a} ->{b} ->{c} ->Null');
   });
 
-  it('test of kthFromEnd', () => {
+  it('Testing kthFromEnd method:', () => {
     const link = new LinkedLilst();
     link.insert(5);
     link.insert(4);
@@ -63,5 +63,48 @@ describe("Linked List", () => {
     expect(link.kthFromEnd(4)).toEqual(1);
     expect(link.kthFromEnd(10)).toEqual('Exception');
   });
+
+  it('Testing append method:', () => {
+    const link = new LinkedLilst();
+    link.append(1);
+    link.append(2);
+    link.append(3);
+    
+
+    expect(link.head.value).toEqual(1);
+    expect(link.head.next.value).toEqual(2);
+    expect(link.head.next.next.value).toEqual(3);
+    expect(link.head.next.next.next).toBeNull();
+  });
+
+
+  it('Testing insert-before method:', () => {
+    const link = new LinkedLilst() ;
+    link.insert(4)
+    link.insert(3)
+    link.insert(1)
+    link.insertBefore(3, 2);
+    expect(link.head.value).toBe(1);
+    expect(link.head.next.value).toBe(2);
+    expect(link.head.next.next.value).toBe(3);
+    expect(link.head.next.next.next.value).toBe(4);
+    expect(link.head.next.next.next.next).toBeNull();
+  });
+
+
+  it('testing insertAfter method:',()=>{
+    const link = new LinkedLilst();
+    link.insert(4)
+    link.insert(3)
+    link.insert(2)
+    link.insert(1)
+    link.insertAfter(4,5);
+    expect(link.head.value).toBe(1);
+    expect(link.head.next.value).toBe(2);
+    expect(link.head.next.next.value).toBe(3);
+    expect(link.head.next.next.next.value).toBe(4);
+    expect(link.head.next.next.next.next.value).toBe(5);
+    expect(link.head.next.next.next.next.next).toBeNull();
+  })
 
 });
