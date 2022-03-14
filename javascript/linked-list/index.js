@@ -139,6 +139,23 @@ class LinkedList {
     }
   }
 
+
+  reverse() {
+  let link = new LinkedList();
+  let current = this.head
+
+    while(current){
+
+      console.log(current.value);
+
+      link.insert(current.value)
+
+      current = current.next
+    }
+    return link
+    
+  }
+
 }
 
 module.exports = LinkedList;

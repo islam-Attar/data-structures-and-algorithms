@@ -128,4 +128,56 @@ describe("Linked List", () => {
   
   })
 
+  it('testing zipList method:',()=>{
+    const link1 = new LinkedLilst();
+    const link2 = new LinkedLilst();
+    const link3 = new LinkedLilst();
+    
+    link1.insert(6);
+    link1.insert(5);
+    link1.insert(3);
+    link1.insert(1);
+
+    
+    link2.insert(4);
+    link2.insert(2);
+
+    link3.zipList(link1,link2);
+  
+  expect(link3.toString()).toBe('{1} ->{2} ->{3} ->{4} ->{5} ->{6} ->Null')
+  
+  })
+
+
+  it('testing zipList method:',()=>{
+    const link1 = new LinkedLilst();
+    const link2 = new LinkedLilst();
+    const link3 = new LinkedLilst();
+    
+    
+    link1.insert(1);
+
+    link2.insert(4);
+    link2.insert(3);
+    link2.insert(2);
+
+    link3.zipList(link1,link2);
+  
+  expect(link3.toString()).toBe('{1} ->{2} ->{3} ->{4} ->Null')
+  
+  })
+
+  it('testing reverse method:',()=>{
+    const link = new LinkedLilst();
+
+    link.insert(6)
+    link.insert(5)
+    link.insert(4)
+    link.insert(3)
+    link.insert(2)
+    link.insert(1)
+   
+    expect(link.reverse().toString()).toBe('{6} ->{5} ->{4} ->{3} ->{2} ->{1} ->Null')
+  })
+
 });
