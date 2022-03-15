@@ -1,7 +1,6 @@
 "use strict";
 
-const { it } = require("eslint/lib/rule-tester/rule-tester");
-// Require our linked list implementation
+
 const LinkedLilst = require("../index");
 
 describe("Linked List", () => {
