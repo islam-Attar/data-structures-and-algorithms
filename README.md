@@ -24,10 +24,14 @@ To run your tests
 
 ## Table of Contents
 | challenge      | Link |
-| ----------- | -----------                                                                                                       |
-| 1           |      https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/array-reverse/README.md   |
-| 2           | https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/array-insert-shift/README.md   |
-| 3           | https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/array-binary-search/README.md  |
-| 4           |   https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/linked-list/README.md        |
-| 6           |  https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/linked-list/README.md         |
-| 7           |      https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/linked-list/README.md     | 
+| ----------- | -----------                                                                                                              |
+| 1           |      https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/array-reverse/README.md          |
+| 2           | https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/array-insert-shift/README.md          |
+| 3           | https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/array-binary-search/README.md         |
+| 4           |   https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/linked-list/README.md               |
+| 5           |      technical interview rubric  
+| 6           |  https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/linked-list/README.md                |
+| 7           |      https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/linked-list/README.md            | 
+| 8           |      https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/linked-list/README.md            |
+| 9           |      technical interview rubric                                    |
+| 10          | https://github.com/islam-Attar/data-structures-and-algorithms/blob/main/javascript/linked-list/stack-queue/README.md     | 
