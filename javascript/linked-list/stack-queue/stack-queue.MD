@@ -3,7 +3,7 @@ The challange asked us to enqueue and dequeue a stack as a queue.
 
 
 ## Whiteboard Process
-![](./chal11img.png)
+![](./challenge11.png)
 
 ## Approach & Efficiency
 * enqueue BigO ---> o(1);
