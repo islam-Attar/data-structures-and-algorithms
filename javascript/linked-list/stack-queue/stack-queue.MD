@@ -8,8 +8,8 @@ The challange asked us to enqueue and dequeue a stack as a queue.
 ## Approach & Efficiency
 we used the same method from previous challenge and same process so the time and complexity will remain the same which is **big O (1)**
 
-* enqueue BigO ---> o(1);
-* dequeue BigO ---> o(1);
+* enqueue BigO ---> O(1);
+* dequeue BigO ---> O(1);
 
 ## Solution
 
