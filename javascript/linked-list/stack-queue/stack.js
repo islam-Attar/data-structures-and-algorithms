@@ -29,6 +29,7 @@ class Stack {
         else {
             let poppedNode = this.top
             this.top = poppedNode.next
+            poppedNode.next = null
 
             this.length--
             return poppedNode;
