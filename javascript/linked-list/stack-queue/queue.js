@@ -39,7 +39,7 @@ class Queue {
     peak(){
     if (!this.front) return "exception"
 
-     return this.front
+     return this.front.value
 
     }
 
