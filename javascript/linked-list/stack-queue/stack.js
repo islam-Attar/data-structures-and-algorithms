@@ -40,7 +40,7 @@ class Stack {
 
         if (!this.top) return 'exception'
 
-        return this.top
+        return this.top.value
     }
 
     isEmpty() {
