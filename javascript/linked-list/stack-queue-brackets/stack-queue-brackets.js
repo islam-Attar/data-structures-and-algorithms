@@ -29,7 +29,7 @@ function stackQueueBrackets(str) {
         
     })
 
-    if (newStack.isEmpty()) 
+    if (newStack.isEmpty())
         return true;
     else 
      return false;
