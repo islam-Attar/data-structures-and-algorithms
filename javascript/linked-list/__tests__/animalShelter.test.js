@@ -51,4 +51,17 @@ describe('testing AnimalShelter', () => {
         expect(animal.queue.length).toBe(0);
 
     })
+
+
+    it('testing edge cases', async () => {
+
+        const animal = new AnimalShelter();
+        const cat = new Cat("cat");
+
+        animal.enqueue(cat)
+        expect(animal.queue.length).toBe(1)
+
+        expect(animal.enqueue('test')).toBe(null)
+         
+    })
 })
