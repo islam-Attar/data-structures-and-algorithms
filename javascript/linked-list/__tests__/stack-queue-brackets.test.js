@@ -8,11 +8,6 @@ describe('testing',()=>{
         expect(stackQueueBracketsfun(str)).toBe(true);
     })
 
-    it('testing empty string case',()=>{
-        let str1 = ""
-        expect(stackQueueBracketsfun(str1)).toBeNull();
-    })
-
     it('testing opening case',()=>{
         let str2 = "{"
         expect(stackQueueBracketsfun(str2)).toBe(false);
@@ -27,4 +22,21 @@ describe('testing',()=>{
         let str4 = "[({}]"
         expect(stackQueueBracketsfun(str4)).toBe(false);
     })
+
+    it('testing empty string edge case',()=>{
+        let str1 = ""
+        expect(stackQueueBracketsfun(str1)).toBeNull();
+    })
+
+    it('testing non-string edge case',()=>{
+        let str5 = 343434
+        expect(stackQueueBracketsfun(str5)).toBe(null);
+    })
+
+    it('testing no brackets edge case',()=>{
+        let str6 = '343434'
+        expect(stackQueueBracketsfun(str6)).toBe(null);
+    })
+
 })
+

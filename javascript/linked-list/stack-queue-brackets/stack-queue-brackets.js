@@ -2,11 +2,17 @@ const stack = require('../stack-queue/stack');
 
 function stackQueueBrackets(str) {
     const newStack = new stack();
-    if (str == "") {
+
+    if (str == "" || typeof str !== "string") {
         return null;
     }
 
+
     let result = str.split('');
+
+    if (!result.includes('(') && !result.includes(')') && !result.includes('{') &&
+        !result.includes('}') && !result.includes('[') && !result.includes(']')) return null;
+
     result.map((element) => {
 
         if (element == '(' || element == '{' || element == '[') {
@@ -22,18 +28,18 @@ function stackQueueBrackets(str) {
             newStack.pop();
         }
 
-        else if(element == ']' || element == '}' || element == ')'){
+        else if (element == ']' || element == '}' || element == ')') {
             newStack.push(element);
         }
-        
-        
+
     })
 
     if (newStack.isEmpty())
         return true;
-    else 
-     return false;
-    
+    else
+        return false;
+
 }
+
 
 module.exports = stackQueueBrackets;
