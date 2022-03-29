@@ -10,3 +10,6 @@ The challange asked us to check if the string has a full bracket or only a part 
 
 ## Solution
 stack-queue-brackets.test.js
+
+## Visualization and edge cases
+![](./challenge13Visualization.png) 
