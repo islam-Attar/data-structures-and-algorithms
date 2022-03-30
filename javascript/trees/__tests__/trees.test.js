@@ -1,4 +1,5 @@
 'use strict'
+const { it } = require('eslint/lib/rule-tester/rule-tester');
 const { BT, BST } = require('../binaryTree');
 const node = require('../node');
 
@@ -40,7 +41,26 @@ describe('testing BT',()=>{
     it('testing the postOrder method',()=>{
         let output = [4,5,2,6,7,3,1];
         expect(tree.postOrder()).toEqual(output)
-    })  
+    })
+
+    //------------------------------------------------------------------------------
+    it('testing findMax in BT',()=>{
+        expect(tree.findMax()).toEqual(7)
+    })
+
+    // testing edge cases
+
+    it('testing findMax on empty tree',()=>{
+        tree = new BT();
+        expect(tree.findMax()).toEqual(null)
+    })
+
+    it('testing findMax on non numeric tree',()=>{
+        tree = new BT(new node('test'));
+        expect(tree.findMax()).toEqual('not a number')
+    })
+
+    
 })
 
 describe('testing BST',()=>{
@@ -85,5 +105,8 @@ describe('testing BST',()=>{
         expect(binarySearchTree.contains(160)).toBe(true);
         expect(binarySearchTree.contains(90)).toBe(false);
 
+    })
+    it('testing findMax in BST',()=>{
+        expect(binarySearchTree.findMax()).toEqual(160)
     })
 })
