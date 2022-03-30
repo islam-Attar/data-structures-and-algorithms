@@ -64,6 +64,28 @@ class BT {
 
         return arr;
     }
+
+    findMax(){
+
+        if(this.root == null) return null;
+        if(typeof this.root.value != 'number') return 'not a number';
+        let max = this.root.value;
+
+        const recTraverse = (Node) => {
+            if(Node.value > max){
+                max = Node.value;
+            }
+            if (Node.left) {
+                recTraverse(Node.left);
+            }
+            if (Node.right) {
+                recTraverse(Node.right);
+            }
+        }
+        recTraverse(this.root)
+        return max;
+    }
+    
 }
 
 class BST extends BT {
