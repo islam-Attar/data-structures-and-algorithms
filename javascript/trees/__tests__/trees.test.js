@@ -40,7 +40,19 @@ describe('testing BT',()=>{
     it('testing the postOrder method',()=>{
         let output = [4,5,2,6,7,3,1];
         expect(tree.postOrder()).toEqual(output)
-    })  
+    })
+//------------------------------------------------------------------------------
+
+    it('testing the breadth method',()=>{
+        
+        let output = [1,2,3,4,5,6,7];
+        expect(tree.breadthFirst()).toEqual(output)
+    }) 
+
+    it('testing empty breadth method',()=>{
+        let breadthTree = new BT()
+        expect(breadthTree.breadthFirst()).toEqual('Empty tree')
+    }) 
 })
 
 describe('testing BST',()=>{

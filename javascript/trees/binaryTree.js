@@ -7,7 +7,7 @@ class BT {
 
     preOrder() {
         let arr = [];
-        
+
         const recTraverse = (Node) => {
 
             arr.push(Node.value);
@@ -62,6 +62,27 @@ class BT {
 
         recTraverse(this.root)
 
+        return arr;
+    }
+    breadthFirst() {
+
+        if (!this.root) return "Empty tree"  // empty tree
+
+        let arr = [];
+        let queue = [];
+        queue.push(this.root);
+
+        while (queue.length > 0) {
+            let current = queue.shift();
+            arr.push(current.value);
+
+            if (current.left) {     // check for left child
+                queue.push(current.left);
+            }
+            if (current.right) {    // check for right child
+                queue.push(current.right);  
+            }
+        }
         return arr;
     }
 }
