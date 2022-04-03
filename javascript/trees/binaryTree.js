@@ -7,7 +7,7 @@ class BT {
 
     preOrder() {
         let arr = [];
-        
+
         const recTraverse = (Node) => {
 
             arr.push(Node.value);
@@ -65,27 +65,28 @@ class BT {
         return arr;
     }
 
-    findMax(){
+    breadthFirst() {
 
-        if(this.root == null) return null;
-        if(typeof this.root.value != 'number') return 'not a number';
-        let max = this.root.value;
+        if (!this.root) return "Empty tree"  // empty tree
 
-        const recTraverse = (Node) => {
-            if(Node.value > max){
-                max = Node.value;
+        let arr = [];
+        let queue = [];
+        queue.push(this.root);
+
+        while (queue.length > 0) {
+            let current = queue.shift();
+            arr.push(current.value);
+
+            if (current.left) {     // check for left child
+                queue.push(current.left);
             }
-            if (Node.left) {
-                recTraverse(Node.left);
-            }
-            if (Node.right) {
-                recTraverse(Node.right);
+            if (current.right) {    // check for right child
+                queue.push(current.right);  
             }
         }
-        recTraverse(this.root)
-        return max;
+        return arr;
     }
-    
+
 }
 
 class BST extends BT {

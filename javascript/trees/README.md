@@ -4,6 +4,9 @@ Tree is a data structure that has many types Binary tree (k = 2) , binary search
 ## Challenge
 The challenge asked us to create a binary tree class has preorder inOrder and postorder travers  methods and binary search trees which is a sub-class of the binary tree class with two newer methods ( add , contains)
 
+## Whiteboard
+![](./challenge17.png)
+
 ## Approach & Efficiency
 i used recursion for the traversal methods and while loop with if statement to rstrict all the odds.
 
@@ -19,9 +22,10 @@ On Simplifying (1) you can prove that the traversal(either `inOrder` or `preOrde
 
 `contains` has time complexity of **BigO (n)** as `worst case scenario` but on `average` it would be **Big O(h)** where h is the height of the tree
 
+`breadthFirst` Time complexity is O(n), where n is the number of nodes. You need to traverse all nodes.
+
+
 
 ### **Space complexity**
 
-The space complexity of `all of them` would be **BigO(n)** with 'n' being the depth of the tree
-
-
+The space complexity of `all of them` would be **BigO(n)** with 'n' being the depth of the tree.

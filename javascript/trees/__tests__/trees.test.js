@@ -43,24 +43,19 @@ describe('testing BT',()=>{
         expect(tree.postOrder()).toEqual(output)
     })
 
-    //------------------------------------------------------------------------------
-    it('testing findMax in BT',()=>{
-        expect(tree.findMax()).toEqual(7)
-    })
+//------------------------------------------------------------------------------
 
-    // testing edge cases
+    it('testing the breadth method',()=>{
+        
+        let output = [1,2,3,4,5,6,7];
+        expect(tree.breadthFirst()).toEqual(output)
+    }) 
 
-    it('testing findMax on empty tree',()=>{
-        tree = new BT();
-        expect(tree.findMax()).toEqual(null)
-    })
+    it('testing empty breadth method',()=>{
+        let breadthTree = new BT()
+        expect(breadthTree.breadthFirst()).toEqual('Empty tree')
+    }) 
 
-    it('testing findMax on non numeric tree',()=>{
-        tree = new BT(new node('test'));
-        expect(tree.findMax()).toEqual('not a number')
-    })
-
-    
 })
 
 describe('testing BST',()=>{
