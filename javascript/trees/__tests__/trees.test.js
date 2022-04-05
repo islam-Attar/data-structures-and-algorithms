@@ -3,8 +3,12 @@ const { it } = require('eslint/lib/rule-tester/rule-tester');
 const { BT, BST } = require('../binaryTree');
 const node = require('../node');
 
+const KArrayTree = require('../kArrayTree')
+const kArrTreeNode = require('../kArrTreeNode');
+
 let tree = null;
 let binarySearchTree = null;
+let KArrTree = null;
 describe('testing BT',()=>{
     beforeAll( ()=>{
         let first = new node(1);
@@ -23,9 +27,33 @@ describe('testing BT',()=>{
         third.right = seventh;
 
         tree = new BT(first);
-    }
 
-    )
+        let firstKa = new kArrTreeNode(1);
+        let secondKa = new kArrTreeNode(2);
+        let thirdKa = new kArrTreeNode(3);
+        let fourthKa = new kArrTreeNode(4);
+        let fifthKa = new kArrTreeNode(5);
+        let sixthKa = new kArrTreeNode(6);
+        let seventhKa = new kArrTreeNode(7);
+        let eighthKa = new kArrTreeNode(9);
+        
+
+        firstKa.child[0] = secondKa;
+        firstKa.child[1] = thirdKa;
+        secondKa.child[0] = fourthKa;
+        secondKa.child[1] = fifthKa;
+        thirdKa.child[0] = sixthKa;
+        thirdKa.child[1] = seventhKa;
+        thirdKa.child[2] = eighthKa;
+
+        KArrTree = new KArrayTree(firstKa);
+    })
+
+    it('testing treeFizzBuzz function',()=>{
+        let output = ['1','2','Fizz','4','Buzz','Fizz','7','Fizz'];
+        expect(KArrTree.treeFizzBuzz()).toEqual(output)
+    })
+
     it('testing the root value',()=>{
         expect(tree.root.value).toEqual(1)
     })
@@ -54,9 +82,21 @@ describe('testing BT',()=>{
     it('testing empty breadth method',()=>{
         let breadthTree = new BT()
         expect(breadthTree.breadthFirst()).toEqual('Empty tree')
-    }) 
+
+    })
+     //------------------------------------------------------------------------------ 
+
+    
+    
+
 
 })
+   
+ 
+
+   
+ 
+
 
 describe('testing BST',()=>{
        beforeAll( ()=>{
@@ -105,3 +145,4 @@ describe('testing BST',()=>{
         expect(binarySearchTree.findMax()).toEqual(160)
     })
 })
+

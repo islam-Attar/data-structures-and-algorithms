@@ -7,7 +7,7 @@ class BT {
 
     preOrder() {
         let arr = [];
-
+        
         const recTraverse = (Node) => {
 
             arr.push(Node.value);
