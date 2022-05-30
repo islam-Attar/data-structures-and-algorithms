@@ -40,7 +40,7 @@ class Graph {
 
         if (!this.adjacencyList.head) return null;
         let node = this.adjacencyList.head;
-        
+
         while (node) {
             if (node.value.value === vertex) {
                 return node.value.edges;
@@ -58,5 +58,28 @@ class Graph {
         }
         return size;
     }
+    breadthFirst(start) {
+
+
+        let queue = [];
+        let visited = {};
+        let result = [];
+        let current;
+
+        queue.push(start);
+        while (queue.length) {
+            current = queue.shift();
+            result.push(current);
+            let neighbors = this.getNeighbors(current);
+
+            for (let i = 0; i < neighbors.length; i++) {
+                if (!visited[neighbors[i].vertex]) {
+                    queue.push(neighbors[i].vertex);
+                }
+            }
+        }
+        return result;
+    }
+
 }
 module.exports = Graph;

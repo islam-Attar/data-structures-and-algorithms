@@ -9,7 +9,10 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
 3. getNodes
 4. getNeighbors
 5. size
+6. breadthFirst
 
+## Whiteboard
+![](./whiteboard.png)
 ## Approach & Efficiency
 1. addNode:  `Time and space complexity: O(1)` because we are just adding and there is no looping or anything.
 
@@ -20,3 +23,5 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
 4. getNeighbors: `Time complexity of O(n)` because we are looping through the list of nodes and for `space complexity its O(1)` because we just returning the neighbors.
 
 5. size: `Time complexity is O(N)` where N is the size of the list. `Space complexity is O(1)` because we just create one space.
+
+6. breadthFirst: `Time complexity is O(N^2)` because we have for loop inside while loop and `Space complexity is O(n)`.
