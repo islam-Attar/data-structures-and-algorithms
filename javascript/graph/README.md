@@ -11,12 +11,17 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
 5. size
 6. breadthFirst
 7. businessTrip
+8. depthFirst
 
 ## breadthFirst Whiteboard
 ![](./whiteboard.png)
 
 ## businessTrip Whiteboard
 ![](./whiteboard2.PNG)
+
+## depthFirst Whiteboard
+![](./whiteboard3.PNG)
+
 
 ## Approach & Efficiency
 1. addNode:  `Time and space complexity: O(1)` because we are just adding and there is no looping or anything.
@@ -32,3 +37,5 @@ Implement your own Graph. The graph should be represented as an adjacency list, 
 6. breadthFirst: `Time complexity is O(N^2)` because we have for loop inside while loop and `Space complexity is O(n)`.
 
 7. businessTrip: `Time complexity is O(N^2)` because we have nested loop and `Space complexity is O(n)`.
+
+8. depthFirst: `Time complexity: O(N + E)`, where N is the number of vertices and E is the number of edges in the graph and `space Complexity: O(n)`, since an extra visited array of size n is required.
