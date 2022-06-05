@@ -96,5 +96,23 @@ class Graph {
         return cost;
     }
 
+    depthFirst(vertex){
+        let result = [];
+        let visited = {};
+    
+        const depthFirstTraverse=(vertex, visited, result)=>{
+          if(!visited[vertex]){
+            visited[vertex] = true;
+            result.push(vertex);
+            let neighbors = this.getNeighbors(vertex);
+            for(let i=0; i<neighbors.length; i++){
+              depthFirstTraverse(neighbors[i].vertex, visited, result);
+            }
+          }
+        };
+        depthFirstTraverse(vertex, visited, result);
+        return result;
+      }
+
 }
 module.exports = Graph;
